@@ -2,6 +2,8 @@
   "name": "chess",
   "version": "0.1.0",
   "private": true,
+  "main": "public/main.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
@@ -9,13 +11,20 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "use-sound": "^2.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "second-start": "export BROWSER=none && react-scripts start",
+    "start-electron": "export ELECTRON_START_URL=http://localhost:3000 && electron .",
+    "preelectron-pack": "yarn build",
+    "electron-pack": "build -c.extraMetadata.main=build/main.js",
+    "build-electron": "mkdir build/src && cp -r electron/. build/electron && cp -r src/components/. build/src/components",
+    "package": "electron-builder build --mac --win -c.extraMetadata.main=build/electron/main.js --publish never"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +43,20 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron-builder": "^22.9.1",
+    "electron": "^11.1.0"
+
+  },
+  "build": {
+    "appId": "funchess",
+    "files": [
+    "build/**/*",
+    "node_modules/**/*"
+    ],
+    "directories":{
+      "buildResources": "assets"
+    }
   }
 }

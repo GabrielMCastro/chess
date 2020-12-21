@@ -1,0 +1,107 @@
+.row {
+    display: flex;
+    flex-direction: row;
+    color: #213129;
+}
+
+.rankcol {
+    color: #213129;
+}
+
+
+.board {
+    border-radius: 5px;
+    box-shadow: 16px 16px 24px 0 rgba(0, 0, 0, 0.2),
+    -16px -16px 24px 0 rgba(255, 255, 255, 0.5);
+}
+
+.topleft {
+    border-radius: 5px 0px 0px 0px;
+}
+
+.topright {
+    border-radius: 0px 5px 0px 0px;
+}
+
+.bottomright {
+    border-radius: 0px 0px 5px 0px;
+}
+
+
+.bottomleft {
+    border-radius: 0px 0px 0px 5px;
+}
+
+.square {
+    height: 9vh;
+    width: 9vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    color: black;
+}
+
+.squarelight {
+    background-color: #DBE6DF;
+}
+
+.activetrue {
+    box-sizing: border-box;
+    border: 4px solid #3B5446;
+}
+
+.squaredark {
+    background-color: #7BA388;
+}
+
+.piecelight {
+    color: #C4D600;
+    font-weight: bolder;
+    font-size: large;
+
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+}
+
+.piecedark {
+    color:#00A950;
+
+    font-weight: bolder;
+    font-size: large;
+/*     
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black; */
+}
+
+.squarebutton {
+    color: #00853E;
+    border: 2px solid #4CAF50;
+}
+
+.dot {
+    height: 25%;
+    width: 25%;
+    background-color: #bbb;
+    border-radius: 50%;
+    opacity: .8;
+
+    background-color: lightgrey;
+    border: 1px solid gray;
+
+    position: absolute;
+}
+
+.rankindicator {
+    margin: 0;
+    padding-right: 10px;
+    height: 9vh;
+    width: 20px;
+}
+
+.fileindicator {
+    margin: 0;
+    padding-top: 5px;
+    width: 9vh;
+}

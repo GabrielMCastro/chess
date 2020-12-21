@@ -1,0 +1,141 @@
+.actionpanelroot {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 85vh;
+    margin-right: 25px;
+    width: 23vw;
+}
+
+.actioncard {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 20px;
+    height: 30%;
+}
+
+.actionrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.captured {
+    display: grid;
+    grid-template:  'p p p p p p p p'
+                    'p p p p p p p p';
+}
+
+.dark {
+    background-color: #7BA388;
+    color: #DBE6DF;
+    height: 25%;
+    border-radius: 5px;
+    box-shadow: 16px 16px 24px 0 rgba(0, 0, 0, 0.2),
+    -16px -16px 24px 0 rgba(255, 255, 255, 0.5);
+}
+
+.xdark {
+    background-color: #213129;
+    color: #DBE6DF;
+    height: 25%;
+    border-radius: 5px;
+    box-shadow: 16px 16px 24px 0 rgba(0, 0, 0, 0.2),
+    -16px -16px 24px 0 rgba(255, 255, 255, 0.5);
+}
+
+.light {
+    background-color: #DBE6DF;
+    color: #7BA388;
+    height: 25%;
+    border-radius: 5px;
+    box-shadow: 16px 16px 24px 0 rgba(0, 0, 0, 0.2),
+    -16px -16px 24px 0 rgba(255, 255, 255, 0.5);
+}
+
+.capturedpiece {
+    width: 2.3vw;
+}
+
+.lightbutton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: 6px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bolder;
+    font-size: large;
+    background-color: #7BA388;
+    color: #213129;
+    user-select: none;
+}
+
+.lightbutton:hover {
+    color: #DBE6DF;
+    background-color: #213129;
+}
+
+.lightbutton:active {
+    outline: none;
+    box-shadow: 0 0 4px 3px #7BA388;
+    /* color: #DBE6DF; */
+    /* background-color: #213129; */
+}
+
+.lightbutton:focus {
+    outline: 0;
+}
+
+.smallbutton {
+    width: 20%;
+    height: 20%;
+}
+
+.offeringdraw {
+    color: #DBE6DF;
+    background-color: #213129;
+}
+
+.paddingless {
+    padding: 0;
+}
+
+.hf {
+    height: 100%;
+}
+
+.wthird {
+    width: 33%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.ltimeface {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #DBE6DF;
+    color: #7BA388;
+    border-radius: 5px;
+}
+
+.dtimeface {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #7BA388;
+    color: #DBE6DF;
+    border-radius: 5px;
+}
